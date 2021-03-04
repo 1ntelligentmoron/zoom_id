@@ -16,30 +16,34 @@ div.grid {
 }
 
 /* for timetable */
-div.normal div table {
+div.normal div.timetable table {
     border: none;
 }
-div.normal div table tr,td,th {
+div.normal div.timetable table tr td,th {
     text-align: center !important;
     vertical-align: middle !important;
     border-radius: 0px !important;
     width: 15% !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
-div.normal div table th { font-weight: bold; }
-div.normal div table th.blank {
+div.normal div.timetable table tr th { font-weight: bold; }
+div.normal div.timetable table tr th.blank {
     background-color: #2f3a49;
     color: #2f3a49;
     width: 15% !important;
 }
-div.normal div table th.light,td.light {
+div.normal div.timetable table tr th.light,td.light {
     background-color: whitesmoke;
     color: #2f3a49;
 }
-div.normal div table th.dark,td.dark {
-    background-color: #2f3a49;
-    color: whitesmoke;
+div.normal div.timetable table tr th.dark,td.dark {
+    background-color: #2f3a49 !important;
+    color: whitesmoke !important;
 }
-
+div.normal div.timetable table tr th.span,td.span {
+    border: 1px solid whitesmoke;
+}
 div.normal div.timetable table {
     border: 2px whitesmoke solid;
     border-collapse: collapse;
@@ -77,6 +81,9 @@ div.topnav nav {
 div.topnav nav a {
     margin-left: 1%;
     color: whitesmoke;
+}
+div.topnav nav a:hover {
+    color: gray;
 }
 div.topnav nav a.hi {
     margin-right: 1%;

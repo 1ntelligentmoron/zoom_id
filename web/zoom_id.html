@@ -15,18 +15,18 @@
 
 <div class="topnav">
 <nav>
-    <a href="zoom_id.html">Home</a>
-    <a href="setup.html">Setup</a>
+    <a onclick="url('zoom_id.html');">Home</a>
+    <a onclick="url('setup.html')">Setup</a>
     <a class="hi" id="hi"></a>
 </nav>
 </div>
-
-
 
 <div class="normal grid">
 
     <!-- timetable -->
     <div class="timetable">
+        Show by: <a onclick="alert('t');" id="optiionTimetable" style="color: whitesmoke;">TIMETABLE</a> | 
+        <a onclick="alert('s');" id="optionSubjectName" style="color: whitesmoke;">SUBJECT NAME</a>
         <table cellspacing="0px" cellpadding="0px">
             <tr>
                 <th class="blank"></th>
@@ -37,12 +37,24 @@
                 <th class="light">FRI</th>
             </tr>
             <tr>
-                <th class="light">08:40-09:25</th>
-                <td class="dark" id="mon1"></td>
-                <td class="light" id="tue1"></td>
-                <td class="dark" id="wed1"></td>
-                <td class="light" id="thur1"></td>
-                <td class="dark" id="fri1"></td>
+                <th class="light">08:10-08:30</th>
+                <th class="dark span" colspan=5>Morning Devotion or DEAR Time</th>
+            </tr>
+            <tr>
+                <th class="dark">08:40-09:20</th>
+                <th class="light" id="mon1">mon1</th>
+                <th class="dark" id="tue1">tue1</th>
+                <th class="light" id="wed1">wed1</th>
+                <th class="dark" id="thur1">thur1</th>
+                <th class="light" id="fri1">fri1</th>
+            </tr>
+            <tr>
+                <th class="light">09:25-10:05</th>
+                <th class="dark" id="mon2">mon2</th>
+                <th class="light" id="tue2">tue2</th>
+                <th class="dark" id="wed2">wed2</th>
+                <th class="light" id="thur2">thur2</th>
+                <th class="dark" id="fri2">fri2</th>
             </tr>
         </table>
     </div>
@@ -79,9 +91,9 @@
 
         <hr color="whitesmoke">
 
-        <div class="copy" style="font-size: 12px !important; color: gray;">
+        <div class="copy" style="font-size: 12px !important; color: gray !important;">
             I bear no responsibility if you miss your class due to being over-reliant on this tool.<br>
-            Program built with Python Eel framework.
+            Program built with Python-Electron <b><u onclick='urlNewPage("https://pypi.org/project/Eel/")'>Eel</u></b> framework. 
         </div>
 
     </div>
