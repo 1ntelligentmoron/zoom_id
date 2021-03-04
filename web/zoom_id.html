@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Timetable by 1ntelligentMoron (v0.1.0DEV)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script rel="text/javascript" src="main.js"></script>
+    <script rel="text/javascript" src="/eel.js"></script>
+</head>
+
+<body onload="onLoad();">
+
+<div class="topnav">
+<nav>
+    <a href="zoom_id.html">Home</a>
+    <a href="setup.html">Setup</a>
+    <a class="hi" id="hi"></a>
+</nav>
+</div>
+
+
+
+<div class="normal grid">
+
+    <!-- timetable -->
+    <div class="timetable">
+        <table cellspacing="0px" cellpadding="0px">
+            <tr>
+                <th class="blank"></th>
+                <th class="light">MON</th>
+                <th class="dark">TUE</th>
+                <th class="light">WED</th>
+                <th class="dark">THUR</th>
+                <th class="light">FRI</th>
+            </tr>
+            <tr>
+                <th class="light">08:40-09:25</th>
+                <td class="dark" id="mon1"></td>
+                <td class="light" id="tue1"></td>
+                <td class="dark" id="wed1"></td>
+                <td class="light" id="thur1"></td>
+                <td class="dark" id="fri1"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- gap -->
+    <div></div>
+
+    <!-- details -->
+    <div class="details">
+
+        <hr color="whitesmoke">
+
+        <div class="copy">
+            <p>Next: XXX</p>
+            <center>
+                PMI: XXX-XXX-XXXX<br>
+                Password: XXXXXXXX<br> <!-- only shows when password == True -->
+                <br>
+                <h6 id="copy" onclick="copy()">Click to Copy PMI</h6>
+            </center>
+        </div>
+
+        <hr color="whitesmoke">
+
+        <div class="copy">
+            <p>Now: XXX</p>
+            <center>
+                PMI: XXX-XXX-XXXX<br>
+                Password: XXXXXXXX<br> <!-- only shows when password == True -->
+                <br>
+                <h6 id="copy" onclick="copy()">Click to Copy PMI</h6>
+            </center>
+        </div>
+
+        <hr color="whitesmoke">
+
+        <div class="copy" style="font-size: 12px !important; color: gray;">
+            I bear no responsibility if you miss your class due to being over-reliant on this tool.<br>
+            Program built with Python Eel framework.
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

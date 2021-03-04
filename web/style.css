@@ -1,0 +1,84 @@
+/* for whole page */
+body {
+    background-color: #2f3a49;
+    font-size: 18px;
+    color: whitesmoke;
+}
+div.normal {
+    margin: 1% 2% 1% 2%;
+}
+div.normal div {
+    padding: 2%;
+}
+div.grid {
+    display: grid;
+    grid-template-columns: 75% 3% 22%;
+}
+
+/* for timetable */
+div.normal div table {
+    border: none;
+}
+div.normal div table tr,td,th {
+    text-align: center !important;
+    vertical-align: middle !important;
+    border-radius: 0px !important;
+    width: 15% !important;
+}
+div.normal div table th { font-weight: bold; }
+div.normal div table th.blank {
+    background-color: #2f3a49;
+    color: #2f3a49;
+    width: 15% !important;
+}
+div.normal div table th.light,td.light {
+    background-color: whitesmoke;
+    color: #2f3a49;
+}
+div.normal div table th.dark,td.dark {
+    background-color: #2f3a49;
+    color: whitesmoke;
+}
+
+div.normal div.timetable table {
+    border: 2px whitesmoke solid;
+    border-collapse: collapse;
+}
+
+/* for copy zoom id */
+div.details div.copy p {
+    margin-top: 0px;
+    font-weight: bold;
+}
+
+div.details div.copy h6 {
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+div.details div.copy h6:hover {
+    color: gray;
+}
+
+div.details div.copy { margin: 8% 0px 8% 0px; }
+
+/* for topmost navbar */
+div.topnav {
+    min-height: 10%;
+    max-height: 10%;   
+}
+div.topnav nav {
+    background-color: #2e3135;
+    font-size: 24px;
+    font-weight: bold;
+}
+div.topnav nav a {
+    margin-left: 1%;
+    color: whitesmoke;
+}
+div.topnav nav a.hi {
+    margin-right: 1%;
+    float: right;
+}
