@@ -24,8 +24,8 @@ div.normal div.timetable table tr td,th {
     vertical-align: middle !important;
     border-radius: 0px !important;
     width: 15% !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
 }
 div.normal div.timetable table tr th { font-weight: bold; }
 div.normal div.timetable table tr th.blank {
@@ -48,6 +48,8 @@ div.normal div.timetable table {
     border: 2px whitesmoke solid;
     border-collapse: collapse;
 }
+div.normal div.timetable a.mode { color: whitesmoke !important; }
+div.normal div.timetable a.mode:hover { color: gray !important; }
 
 /* for copy zoom id */
 div.details div.copy p {
