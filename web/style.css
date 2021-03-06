@@ -41,11 +41,20 @@ div.normal div.timetable table tr th.dark,td.dark {
     background-color: #2f3a49 !important;
     color: whitesmoke !important;
 }
-div.normal div.timetable table tr th.span,td.span {
-    border: 1px solid whitesmoke;
+div.normal div.timetable table tr th.dspan,td.dspan {
+    border-width: 1px 1px 1px 0px;
+    border-color: whitesmoke;
+    border-style: solid;
+}
+div.normal div.timetable table tr th.lspan,td.lspan {
+    border-width: 1px 2px 1px 0px;
+    border-top-color: #2f3a49;
+    border-bottom-color: #2f3a49;
+    border-right-color: whitesmoke;
+    border-style: solid;
 }
 div.normal div.timetable table {
-    border: 2px whitesmoke solid;
+    border: 2px whitesmoke solid !important;
     border-collapse: collapse;
 }
 div.normal div.timetable a.mode { color: whitesmoke !important; }
@@ -56,19 +65,17 @@ div.details div.copy p {
     margin-top: 0px;
     font-weight: bold;
 }
-
 div.details div.copy h6 {
     border-radius: 8px;
     font-weight: bold;
     padding: 0px !important;
     margin: 0px !important;
 }
-
 div.details div.copy h6:hover {
     color: gray;
 }
-
 div.details div.copy { margin: 8% 0px 8% 0px; }
+div.details div.copy u.link:hover { color: whitesmoke !important; }
 
 /* for topmost navbar */
 div.topnav {

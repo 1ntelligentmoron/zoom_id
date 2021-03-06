@@ -1,11 +1,11 @@
 // Communication with Python backend via Eel
-async function python() { // placeholder name
-    
-}
+async function hello() { document.getElementById("hi").innerHTML = await eel.username_to_js()(); }
 
 
 // Frontend
 function onLoad() {
+
+    hello();
 
     // Disable right click
     // document.oncontextmenu = RightMouseDown;
