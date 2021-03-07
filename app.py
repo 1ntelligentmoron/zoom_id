@@ -1,7 +1,6 @@
-import eel # framework
-# import json # pmi storage
-import os # get username: windows, unix only
-# import setup # local python file
+import eel
+import os
+import setup
 
 
 @eel.expose

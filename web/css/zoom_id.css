@@ -77,7 +77,7 @@ div.details div.copy h6:hover {
 div.details div.copy { margin: 8% 0px 8% 0px; }
 div.details div.copy u.link:hover { color: whitesmoke !important; }
 
-/* for topmost navbar */
+/* for navbar */
 div.topnav {
     min-height: 10%;
     max-height: 10%;   

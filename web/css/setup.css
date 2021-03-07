@@ -1,0 +1,53 @@
+/* for whole page */
+body {
+    background-color: #2f3a49;
+    font-size: 18px;
+    color: whitesmoke;
+}
+div.normal {
+    margin: 1% 2% 1% 2%;
+}
+div.normal div {
+    padding: 2%;
+}
+
+/* for navbar */
+div.topnav {
+    min-height: 10%;
+    max-height: 10%;   
+}
+div.topnav nav {
+    background-color: #2e3135;
+    font-size: 24px;
+    font-weight: bold;
+}
+div.topnav nav a {
+    margin-left: 1%;
+    color: whitesmoke;
+}
+div.topnav nav a:hover {
+    color: gray;
+}
+div.topnav nav a.hi {
+    margin-right: 1%;
+    float: right;
+}
+
+/* for forms */
+div.form form { margin: 2% 3% 2% 3%; }
+div.form-add {
+    border: 3px solid #beffbe;
+    border-radius: 18px;
+    color: #beffbe;
+}
+div.form-add form input {
+    overflow: hidden;
+    resize: none;
+    color: whitesmoke;
+}
+div.form-add form button {
+    border: 2px solid #beffbe;
+    border-radius: 8px;
+    background-color: #2f3a49;
+    color: #beffbe;
+}

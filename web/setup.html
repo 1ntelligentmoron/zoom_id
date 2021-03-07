@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoom Timetable by 1ntelligentMoron (v0.1.0DEV)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script rel="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="css/setup.css">
+    <script rel="text/javascript" src="js/setup.js"></script>
+    <script rel="text/javascript" src="js/main.js"></script>
     <script rel="text/javascript" src="/eel.js"></script>
 </head>
 <body onload="onLoad();">
@@ -16,6 +17,14 @@
             <a onclick="url('setup.html')">Setup</a>
             <a class="hi" id="hi"></a>
         </nav>
+    </div>
+    <div class="normal form form-add">
+        <form name="add">
+            <u>Add subjects and the teachers' PMI here.</u>
+            <input type="text" name="subject" id="subject" placeholder="Name of subject"><br>
+            <input type="text" name="pmi" id="pmi" placeholder="PMI (numbers only, no hyphen, no space)">
+            <button type="submit" onclick="return validateAdd();">Add</button>
+        </form>
     </div>
 </body>
 </html>
