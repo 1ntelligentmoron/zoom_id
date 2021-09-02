@@ -1,3 +1,5 @@
+# IMPORTANT: Development terminated indefinitely due to end of Zoom lessons before completion of program.
+
 Brief Introduction:
 Electron app with Python 3 as backend for customisable timetable with easy Zoom PMI copying.
 
